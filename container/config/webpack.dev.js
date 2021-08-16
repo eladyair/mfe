@@ -1,6 +1,5 @@
 // 3rd Parties
 const { merge } = require('webpack-merge');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 // Common Config
@@ -21,9 +20,6 @@ const devConfig = {
                 marketing: 'marketing@http://localhost:8081/remoteEntry.js'
             },
             shared: packageJson.dependencies
-        }),
-        new HtmlWebpackPlugin({
-            template: './public/index.html'
         })
     ]
 };
