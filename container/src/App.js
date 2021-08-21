@@ -6,7 +6,6 @@ import MarketingApp from './components/marketing/marketing-app';
 const App = () => {
     return (
         <Fragment>
-            Hello
             <MarketingApp />
         </Fragment>
     );
